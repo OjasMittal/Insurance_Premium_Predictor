@@ -21,4 +21,4 @@ prediction = model.predict(pd.DataFrame(columns = ['Gender','Age','Height','Weig
                                                    'Duration','Heart_Rate','Body_Temp'],
                                         data = np.array([g,age,height,weight,duration,heartrate,bodytemp]).reshape(1,7)))
 if st.button("Predict"):
-    st.success(f"🔥 Calories burned:  {prediction[0]} kcal")
+    st.success(f"🔥 Calories burned:  {prediction[0]} cal")
